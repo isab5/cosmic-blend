@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛍️ Crystal Amour
 
-## Getting Started
+**Crystal Amour** é uma simulação de e-commerce desenvolvida com **Next.js**, utilizando **CSS Modules** e **TailwindCSS** para o estilo.  
+O projeto consome dados de produtos de uma **API pública (DummyJSON)**, permitindo visualizar e testar a navegação em um ambiente semelhante a uma loja virtual real.
 
-First, run the development server:
+---
 
+## 🚀 Tecnologias
+
+- [Next.js](https://nextjs.org/) – Framework React para aplicações web modernas  
+- [React](https://react.dev/) – Biblioteca base para interfaces  
+- [TailwindCSS](https://tailwindcss.com/) – Estilização rápida e responsiva  
+- CSS Modules – Estilo escopo local para componentes  
+- [DummyJSON API](https://dummyjson.com/) – API pública de produtos para simulação
+
+---
+
+## 📦 Instalação
+
+Clone o repositório:
 ```bash
+git clone https://github.com/isab5/crystal-amour.git
+cd crystal-amour
+Instale as dependências:
+
+bash
+Copiar código
+npm install
+# ou
+yarn
+# ou
+pnpm install
+# ou
+bun install
+🛠️ Desenvolvimento
+Rodar o servidor local:
+
+bash
+Copiar código
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Abra no navegador:
+👉 http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📁 Estrutura do Projeto (resumida)
+bash
+Copiar código
+crystal-amour/
+├── app/                # Páginas e rotas do Next.js
+│   ├── page.js         # Página inicial
+│   ├── products/       # Listagem de produtos
+│   └── ...             
+├── components/         # Componentes reutilizáveis
+├── styles/             # CSS Modules e Tailwind
+├── package.json
+└── ...
+✨ Funcionalidades
+Listagem de produtos da API DummyJSON
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Página de detalhes do produto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Layout responsivo (Tailwind)
 
-## Learn More
+Estilização combinando Tailwind + CSS Modules
 
-To learn more about Next.js, take a look at the following resources:
+Navegação simulando uma loja virtual
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📜 Scripts
+Comando	Descrição
+npm run dev	Inicia o servidor de desenvolvimento
+npm run build	Gera a build de produção
+npm start	Roda a aplicação em produção
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🤝 Contribuição
+Faça um fork do projeto
 
-## Deploy on Vercel
+Crie uma branch (git checkout -b feature/nome-da-feature)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Faça commit das mudanças (git commit -m "feat: minha alteração")
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Faça push da branch (git push origin feature/nome-da-feature)
+
+Abra um Pull Request
+
+📄 Licença
+Este projeto é apenas para fins de estudo e não possui fins comerciais.
+Você pode usá-lo, modificar e estudar livremente.
+
+pgsql
+Copiar código
+
+Quer que eu já prepare também a parte de **badges do GitHub (Next.js, Tailwind, etc.)** e
