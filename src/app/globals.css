@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
 * {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body h1 {
@@ -21,3 +24,7 @@ body h2 {
   font-weight: 600;
 }
 
+body button {
+  font-family: var(--font-quicksand);
+  font-weight: 500;
+}
