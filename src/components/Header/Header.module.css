@@ -1,22 +1,30 @@
 .header {
-    display: flex;
-    flex-direction: row;
     width: 100%;
     height: 30vh;
-    background-color: #F2D5BB;
+    background-color: rgb(240, 215, 193);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
 }
 
 .nav ul {
@@ -24,18 +32,19 @@
     padding: 0;
     margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: row;
+    align-items: center;
 }
 
 .nav li {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 .nav a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
     transition: color 0.3s;
 }
 

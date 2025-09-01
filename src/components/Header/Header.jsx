@@ -8,21 +8,43 @@ export default function Header() {
             <div className={styles.container}>
                 <div className={styles.logo}>
                     <Link href="/home">
-                        <Image src="/img/logoHeader.png" alt="Logo" width={150} height={100} />
+                        <Image src="/img/logoHeaderMenor.jpg" alt="Logo" width={150} height={100} />
                     </Link>
-                    <div>
-                        <nav className={styles.nav}>
-                            <ul>
-                                <li>
-                                    <Link href="/sobreapi">Sobre a API</Link>
-                                </li>
-                                <li>
-                                    <Link href="/contato">Contato</Link>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
                 </div>
+                <nav className={styles.nav}>
+                    <ul>
+                        <li>
+                            <Link href="/sobreapi">
+                                <span>Sobre a API</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/home">
+                                <span>Home</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/contato">
+                                <span>Contato</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/contato">
+                                <span>Contato</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/contato">
+                                <span>Contato</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/contato">
+                                <span>Contato</span>
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     );
