@@ -8,34 +8,24 @@ export default function Header() {
             <div className={styles.container}>
                 <div className={styles.logo}>
                     <Link href="/home">
-                        <Image src="/img/logoHeaderMenor.jpg" alt="Logo" width={150} height={100} />
+                        <Image src="/img/logoHeaderMenor.jpg" alt="Logo" width={200} height={150} />
                     </Link>
                 </div>
                 <nav className={styles.nav}>
                     <ul>
                         <li>
-                            <Link href="/sobreapi">
-                                <span>Sobre a API</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/home">
+                            <Link href="/">
                                 <span>Home</span>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/contato">
-                                <span>Contato</span>
+                            <Link href="/aboutapi">
+                                <span>About API</span>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/contato">
-                                <span>Contato</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/contato">
-                                <span>Contato</span>
+                            <Link href="/products">
+                                <span>Products</span>
                             </Link>
                         </li>
                         <li>

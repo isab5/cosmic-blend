@@ -36,10 +36,27 @@
     margin-bottom: 0.5rem;
 }
 
-.code-block {
-    background: #f4f4f4;
+.codeBlock {
+    background: #fae6d4;
     padding: 0.5rem;
     border-radius: 0.6rem;
     font-size: 0.9rem;
     overflow-x: auto;
+    width: 100%;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #260101;
+}
+
+.list code {
+    text-decoration: underline;
+}
+
+.list code:hover {
+    color: #260101;
 }

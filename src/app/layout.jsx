@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 const quicksand = localFont({
   src: [
@@ -31,7 +33,9 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <body className={quicksand.variable}>
         <main>
+          <Header />
           {children}
+          <Footer />
         </main>
       </body>
     </html>
