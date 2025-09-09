@@ -29,7 +29,7 @@ Clone o repositório:
 https://github.com/isab5/cosmic-blend.git
 ```
 ```bash
-cd crystal-amour
+cd cosmic-blend
 ```
 
 Instale as dependências:
