@@ -26,7 +26,7 @@ O projeto consome dados de produtos de uma **API pública (DummyJSON)**, permiti
 Clone o repositório:
 
 ```bash
-git clone https://github.com/isab5/crystal-amour.git
+https://github.com/isab5/cosmic-blend.git
 ```
 ```bash
 cd crystal-amour
