@@ -22,7 +22,9 @@ export default function AboutAPI() {
           <li><strong>Ideal para testes:</strong> permite simular requisições GET, POST, PUT e DELETE.</li>
         </ul>
 
-        <h2>Exemplo de uso</h2>
+        <h2>Documentação oficial da API</h2>        <Link href="https://dummyjson.com" target="blank" className={styles.codeBlock}>          <span className={styles.link}><strong>https://dummyjson.com</strong> </span>        </Link>
+
+        <h2>Exemplo de URL para uso:</h2>
         <Link href="https://dummyjson.com/products" target="blank" className={styles.codeBlock}>
           <span className={styles.link}><strong>https://dummyjson.com/products</strong> </span>
         </Link>
