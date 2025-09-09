@@ -8,7 +8,7 @@ export default function ProductCard({product, onClick }) {
             <p>{product.description}</p>
             <p>{product.category}</p>
             <p>{product.price}</p>
-            <p>{product.gender}</p>
+            <p>{product.rating}</p>
         </div>
     );
 }

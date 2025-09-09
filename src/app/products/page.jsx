@@ -22,7 +22,7 @@ export default function Products() {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('https://dummyjson.com/products?limit=200&skip=10');
+                const response = await axios.get('https://dummyjson.com/products?limit=200&sortBy=title&order=asc');
                 setProducts(response.data.products);
             } catch (error) {
                 toast.error("Failed to fetch products");
