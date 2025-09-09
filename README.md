@@ -27,6 +27,8 @@ Clone o repositório:
 
 ```bash
 git clone https://github.com/isab5/crystal-amour.git
+```
+```bash
 cd crystal-amour
 ```
 
@@ -63,14 +65,43 @@ Abra no navegador:
 
 ```txt
 crystal-amour/
-├── app/                # Páginas e rotas do Next.js
-│   ├── page.js         # Página inicial
-│   ├── products/       # Listagem de produtos
-│   └── ...             
-├── components/         # Componentes reutilizáveis
-├── styles/             # CSS Modules e Tailwind
+├── public/                     # Arquivos estáticos
+│   ├── fonts/                  # Fontes customizadas
+│   ├── icons/                  # Ícones
+│   └── img/                    # Imagens
+│
+├── src/
+│   ├── app/                    # Rotas e páginas (App Router)
+│   │   ├── globals.css         # Estilos globais (Tailwind + reset)
+│   │   ├── layout.jsx          # Layout raiz (Header + Footer)
+│   │   ├── page.jsx            # Página inicial (/)
+│   │   ├── loading.jsx         # Tela de carregamento
+│   │   ├── not-found.jsx       # Página 404
+│   │   ├── notFound.module.css # Estilos específicos da 404
+│   │   │
+│   │   ├── aboutapi/           # Página institucional (/aboutapi)
+│   │   │   └── page.jsx
+│   │   │
+│   │   └── products/           # Listagem de produtos (/products)
+│   │       ├── page.jsx
+│   │       └── [id]/page.jsx   # Produto individual (/products/:id)
+│   │
+│   ├── components/             # Componentes reutilizáveis
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   └── ProductCard.jsx
+│   │
+│   └── styles/                 # CSS Modules extras
+│       └── Home.module.css
+│
+├── .gitignore
+├── eslint.config.mjs
+├── jsconfig.json
+├── next.config.mjs
 ├── package.json
-└── ...
+├── package-lock.json
+├── postcss.config.mjs
+└── README.md
 ```
 
 ---
