@@ -7,8 +7,8 @@ export default function Header() {
         <div className={styles.header}>
             <div className={styles.container}>
                 <div className={styles.logo}>
-                    <Link href="/home">
-                        <Image src="/img/logoHeaderMenor.jpg" alt="Logo" width={200} height={150} />
+                    <Link href="/">
+                        <Image src="/img/cosmiclogo.png" alt="Logo" width={150} height={100} />
                     </Link>
                 </div>
                 <nav className={styles.nav}>

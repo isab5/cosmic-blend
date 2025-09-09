@@ -24,7 +24,7 @@ export const metadata = {
   title: "Crystal Amour",
   description: "A beautiful and elegant theme for your Next.js application.",
   icons : {
-    icon: '/icons/crystallogo.png',
+    icon: '/icons/cosmiclogonav.png',
   }
 };
 

@@ -1,11 +1,20 @@
 .header {
     width: 100%;
     height: 20vh;
-    background-color: rgb(240, 215, 193);
+    background: linear-gradient(
+        to left,
+        #0f2027,   /* azul escuro */
+        #1a2980,   /* azul profundo */
+        #5f2c82,   /* roxo */
+        #b06ab3,   /* roxo claro */
+        #ff6a88,   /* rosa galáxia */
+        #f585c5    /* rosa escuro */
+    );
     font-weight: bold;
     display: flex;
     align-items: center;
 }
+
 
 .container {
     max-width: 1200px;
@@ -42,7 +51,7 @@
 
 .nav a {
     text-decoration: none;
-    color: black;
+    color: #F2F1E9;
     font-weight: bold;
     font-size: 1.1rem;
     transition: color 0.3s;
