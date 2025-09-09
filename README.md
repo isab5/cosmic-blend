@@ -1,4 +1,4 @@
-# 🛍️ Crystal Amour
+# 🪐 Cosmic Blend
 
 [![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -6,7 +6,7 @@
 [![DummyJSON API](https://img.shields.io/badge/DummyJSON%20API-009688?logo=json&logoColor=white)](https://dummyjson.com/)
 [![CSS Modules](https://img.shields.io/badge/CSS%20Modules-1572B6?logo=css3&logoColor=white)](https://github.com/css-modules/css-modules)
 
-**Crystal Amour** é uma simulação de e-commerce desenvolvida com **Next.js**, utilizando **CSS Modules** e **TailwindCSS** para o estilo.  
+**Cosmic Blend** é uma simulação de e-commerce desenvolvida com **Next.js**, utilizando **CSS Modules** e **TailwindCSS** para o estilo.  
 O projeto consome dados de produtos de uma **API pública (DummyJSON)**, permitindo visualizar e testar a navegação em um ambiente semelhante a uma loja virtual real.
 
 ---
