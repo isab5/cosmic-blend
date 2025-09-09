@@ -21,7 +21,7 @@ const quicksand = localFont({
 });
 
 export const metadata = {
-  title: "Crystal Amour",
+  title: "Cosmic Blend",
   description: "A beautiful and elegant theme for your Next.js application.",
   icons : {
     icon: '/icons/cosmiclogonav.png',
@@ -30,8 +30,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br">
-      <body className={quicksand.variable}>
+    <html lang="pt-br" classname={quicksand.variable>
+      <body className={quicksand.classname}>
         <main>
           <Header />
           {children}
