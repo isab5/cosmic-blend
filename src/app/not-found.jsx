@@ -6,16 +6,16 @@ export default function NotFound() {
     return (
         <div className={styles.container}>
             <div className={styles.card}>
-                <Image src="/img/notFound.png" alt="Not Found" width={300} height={300}  />
+                <Image src="/img/NotFoundCosmic.gif" alt="Not Found" width={300} height={300}  />
                 <h1> Página não encontrada!</h1>
                 <p>A página que você procura não existe ou está indisponível por tempo indeterminado.</p>
                 <div>
-                    <Link href="/home">
+                    <Link href="/">
                         <button className={styles.button}>
                             🏠 Voltar para Home
                         </button>
                     </Link>
-                    <Link href="/contato">
+                    <Link href="/contact">
                         <button className={styles.button}>
                             💬 Fale Conosco
                         </button>

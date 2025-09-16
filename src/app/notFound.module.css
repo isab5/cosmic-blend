@@ -9,7 +9,7 @@
 
 .card {
     display: flex;
-    background-color: #400101;
+    background: linear-gradient(150deg, #000, #000c40, #111661);
     padding: 2rem;
     border-radius: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -26,7 +26,7 @@
 }
 
 .button {
-    background-color: #BF6374;
+    background: radial-gradient(circle at top left, #5f2c82, #b06ab3, #ff6a88);
     color: black;
     border: none;
     border-radius: 2rem;
