@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from "./products.module.css";
 import axios from "axios";
+import Link from "next/link";
 import {
     Pagination,
     Skeleton,
@@ -35,15 +36,17 @@ export default function Products() {
         <div>
             <div className={styles.productList}>
                 {products.map(product => (
-                    <ProductCard key={product.id} product={product} onClick={() => console.log(product.id)} />
+                    <Link key={product.id} href={`/products/${product.id}`} style={{ textDecoration: "none", color: "inherit" }}>
+                        <ProductCard product={product} />
+                    </Link>
                 ))}
             </div>
-                <Pagination
-                    showSizeChanger
-                    onShowSizeChange={onShowSizeChange}
-                    defaultCurrent={3}
-                    total={200}
-                />
+            <Pagination
+                showSizeChanger
+                onShowSizeChange={onShowSizeChange}
+                defaultCurrent={3}
+                total={200}
+            />
         </div>
     );
 }
