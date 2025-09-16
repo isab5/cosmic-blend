@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Isabella from '../../public/img/isabella.jpg'
+
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <div className="w-full max-w-4xl bg-blue-900 rounded-3xl shadow-lg flex flex-row items-center gap-0 p-15 shadow-gray-400">
         <div className="flex-shrink-0 pr-8 flex items-center h-full">
           <Image
-            src={Isabella}
+            src="/img/Isabella.jpg"
             alt="Foto de Isabella Borin"
             width={200}
             height={200}
