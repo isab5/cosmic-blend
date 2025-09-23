@@ -11,6 +11,7 @@ export default function Home() {
             alt="Foto de Isabella Borin"
             width={200}
             height={200}
+            loading='lazy'
             className="rounded-full object-cover"
           />
         </div>

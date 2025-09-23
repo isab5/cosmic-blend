@@ -21,7 +21,7 @@ export default function AboutAPI() {
           <li><strong>Ideal para testes:</strong> permite simular requisições GET, POST, PUT e DELETE.</li>
         </ul>
 
-        <h2>Documentação oficial da API</h2>        
+        <h2>Documentação oficial da API</h2>
         <a href="https://dummyjson.com" target="blank" className={styles.codeBlock}>          <span className={styles.link}><strong>https://dummyjson.com</strong> </span>        </a>
 
         <h2>Exemplo de URL para uso:</h2>
@@ -96,29 +96,38 @@ export default function AboutAPI() {
     },`}
         </pre>
 
-        <h2>Exemplos de endpoints</h2>
-        <ul className={styles.list}>
-          <li>
-            <a href="https://dummyjson.com/products" target="_blank" rel="noopener noreferrer">
-              <code>https://dummyjson.com/products</code>
-            </a> → Produtos
-          </li>
-          <li>
-            <a href="https://dummyjson.com/users" target="_blank" rel="noopener noreferrer">
-              <code>https://dummyjson.com/users</code>
-            </a> → Usuários
-          </li>
-          <li>
-            <a href="https://dummyjson.com/posts" target="_blank" rel="noopener noreferrer">
-              <code>https://dummyjson.com/posts</code>
-            </a> → Posts
-          </li>
-          <li>
-            <a href="https://dummyjson.com/comments" target="_blank" rel="noopener noreferrer">
-              <code>https://dummyjson.com/comments</code>
-            </a> → Comentários
-          </li>
-        </ul>
+        <h2 className={styles.title}>Endpoint e métodos usados</h2>
+        <div className={styles.endpointSection}>
+          <div>
+            <a
+              href="https://dummyjson.com/products"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.endpointLink}
+            >
+              https://dummyjson.com/products
+            </a>
+            <span className={styles.endpointDesc}>→ Produtos</span>
+          </div>
+          <ul className={styles.methodsList}>
+            <li>
+              <span className={styles.methodGet}>GET</span>
+              <span className={styles.methodExplain}>→ Retorna a lista de produtos</span>
+            </li>
+            <li>
+              <span className={styles.methodPost}>POST</span>
+              <span className={styles.methodExplain}>→ Cria um novo produto</span>
+            </li>
+            <li>
+              <span className={styles.methodPut}>PUT</span>
+              <span className={styles.methodExplain}>→ Atualiza um produto existente</span>
+            </li>
+            <li>
+              <span className={styles.methodDelete}>DELETE</span>
+              <span className={styles.methodExplain}>→ Remove um produto</span>
+            </li>
+          </ul>
+        </div>
 
         <h2>Onde usar</h2>
         <ul>
