@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "./abouapi.module.css";
 
 export default function AboutAPI() {
@@ -22,12 +21,13 @@ export default function AboutAPI() {
           <li><strong>Ideal para testes:</strong> permite simular requisições GET, POST, PUT e DELETE.</li>
         </ul>
 
-        <h2>Documentação oficial da API</h2>        <Link href="https://dummyjson.com" target="blank" className={styles.codeBlock}>          <span className={styles.link}><strong>https://dummyjson.com</strong> </span>        </Link>
+        <h2>Documentação oficial da API</h2>        
+        <a href="https://dummyjson.com" target="blank" className={styles.codeBlock}>          <span className={styles.link}><strong>https://dummyjson.com</strong> </span>        </a>
 
         <h2>Exemplo de URL para uso:</h2>
-        <Link href="https://dummyjson.com/products" target="blank" className={styles.codeBlock}>
+        <a href="https://dummyjson.com/products" target="blank" className={styles.codeBlock}>
           <span className={styles.link}><strong>https://dummyjson.com/products</strong> </span>
-        </Link>
+        </a>
 
         <p>Retorna os objetos o JSON com a lista de produtos fictícios, por exemplo:</p>
 
@@ -99,24 +99,24 @@ export default function AboutAPI() {
         <h2>Exemplos de endpoints</h2>
         <ul className={styles.list}>
           <li>
-            <Link href="https://dummyjson.com/products" target="_blank" rel="noopener noreferrer">
+            <a href="https://dummyjson.com/products" target="_blank" rel="noopener noreferrer">
               <code>https://dummyjson.com/products</code>
-            </Link> → Produtos
+            </a> → Produtos
           </li>
           <li>
-            <Link href="https://dummyjson.com/users" target="_blank" rel="noopener noreferrer">
+            <a href="https://dummyjson.com/users" target="_blank" rel="noopener noreferrer">
               <code>https://dummyjson.com/users</code>
-            </Link> → Usuários
+            </a> → Usuários
           </li>
           <li>
-            <Link href="https://dummyjson.com/posts" target="_blank" rel="noopener noreferrer">
+            <a href="https://dummyjson.com/posts" target="_blank" rel="noopener noreferrer">
               <code>https://dummyjson.com/posts</code>
-            </Link> → Posts
+            </a> → Posts
           </li>
           <li>
-            <Link href="https://dummyjson.com/comments" target="_blank" rel="noopener noreferrer">
+            <a href="https://dummyjson.com/comments" target="_blank" rel="noopener noreferrer">
               <code>https://dummyjson.com/comments</code>
-            </Link> → Comentários
+            </a> → Comentários
           </li>
         </ul>
 

@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     width: 20rem;
-    height: 35rem;
+    height: 38rem;
     margin: 1rem;
     transition: box-shadow 0.2s;
     padding: 1.25rem;
@@ -67,7 +67,19 @@
     color: #ffc107;
     font-size: 1.15rem;
     letter-spacing: 0.05em;
-  }
+}
+
+.button {
+    margin-top: auto;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #1a2980, #1b8886);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
 
 @media (max-width: 600px) {
     .card {

@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import axios from "axios";
 import styles from "./[id].module.css";
+import Image from "next/image";
+import Link from "next/link";
+import { LeftOutlined } from "@ant-design/icons";
 
 export default function ProductDetails() {
     const params = useParams();
@@ -35,10 +38,15 @@ export default function ProductDetails() {
     return (
         <div className={styles.page}>
             <div className={styles.productDetailsContainer}>
-                <img
+                <Link href="/products" className={styles.iconBackButton} aria-label="Voltar para Produtos">
+                    <LeftOutlined style={{ fontSize: "22px" }} />
+                </Link>
+                <Image
                     className={styles.cover}
-                    src={product.thumbnail || "/placeholder.jpg"}
+                    src={product.thumbnail || "/img/placeholder.jpg"}
                     alt={product.title}
+                    width={200}
+                    height={200}
                 />
                 <div className={styles.infoBlock}>
                     <h1 className={styles.title}>{product.title}</h1>
@@ -48,6 +56,7 @@ export default function ProductDetails() {
                         <p><strong>Category:</strong> {product.category}</p>
                         <p><strong>Price:</strong> ${product.price}</p>
                         <p><strong>Stock:</strong> {product.stock}</p>
+                        <p><strong>Discount:</strong> {product.discountPercentage}%</p>
                         <p><strong>Rating:</strong> {product.rating ? (
                             <span className={styles.rating}>
                                 {"★".repeat(Math.round(product.rating))}

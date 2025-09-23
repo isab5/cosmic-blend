@@ -7,7 +7,7 @@ export default function NotFound() {
         <div className={styles.container}>
             <div className={styles.card}>
                 <Image src="/img/NotFoundCosmic.gif" alt="Not Found" width={300} height={300}  />
-                <h1> Página não encontrada!</h1>
+                <h1> Página não encontrada! 😥</h1>
                 <p>A página que você procura não existe ou está indisponível por tempo indeterminado.</p>
                 <div>
                     <Link href="/">

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from "./products.module.css";
 import axios from "axios";
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 import { Pagination, Skeleton } from "antd";
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -15,7 +15,7 @@ export default function Products() {
     const [current, setCurrent] = useState(1);
     const [loading, setLoading] = useState(true);
 
-    const router = useRouter(); // <-- Aqui instancia
+    const router = useRouter(); 
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -36,12 +36,12 @@ export default function Products() {
     const endIndex = startIndex + PAGE_SIZE;
     const paginatedProducts = products.slice(startIndex, endIndex);
 
-    // Função de clique customizada
+
     const handleProductClick = (product) => {
-        toast.success(`Você está visualizando: ${product.title}`);
+        toast.success(`You are viewing: ${product.title}`);
         setTimeout(() => {
             router.push(`/products/${product.id}`);
-        }, 700); // tempo suficiente para o toast aparecer
+        }, 700);
     };
 
     return (
@@ -58,9 +58,11 @@ export default function Products() {
                         <div
                             key={product.id}
                             style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}
-                            onClick={() => handleProductClick(product)}
                         >
-                            <ProductCard product={product} />
+                            <ProductCard
+                                product={product}
+                                onView={() => handleProductClick(product)}
+                            />
                         </div>
                     ))
                 }
@@ -71,10 +73,9 @@ export default function Products() {
                 total={products.length}
                 pageSize={PAGE_SIZE}
                 showSizeChanger={false}
-                style={{ margin: "2rem auto", textAlign: "center" }}
+                style={{ margin: "2rem auto", textAlign: "center", justifyContent: "center", display: "flex" }}
                 disabled={loading}
             />
-            {/* O ToastContainer deve estar global (em layout.js) para pegar navegação */}
         </div>
     );
 }

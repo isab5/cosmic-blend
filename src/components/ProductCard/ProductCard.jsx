@@ -8,9 +8,9 @@ function renderStars(rating) {
     return stars + ` (${rating})`;
 }
 
-export default function ProductCard({ product, onClick }) {
+export default function ProductCard({ product, onView }) {
     return (
-        <div className={styles.card} onClick={onClick}>
+        <div className={styles.card}>
             <Image
                 src={product.thumbnail || "/placeholder.jpg"}
                 className={styles.avatar}
@@ -24,6 +24,9 @@ export default function ProductCard({ product, onClick }) {
             <p className={styles.category}>{product.category || "Sem categoria"}</p>
             <p className={styles.price}>{typeof product.price === "number" ? `US$ ${product.price}` : "Sem preço"}</p>
             <p className={styles.rating}>{renderStars(product.rating)}</p>
+            <button className={styles.button} onClick={onView}>
+                Details
+            </button>
         </div>
     );
 }
