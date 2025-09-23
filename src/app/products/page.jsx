@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { Pagination, Skeleton } from "antd";
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-import ProductCard from "../../components/ProductCard/ProductCard";
+import ProductCard from "components/ProductCard/ProductCard";
 
 const PAGE_SIZE = 30;
 
@@ -15,7 +15,7 @@ export default function Products() {
     const [current, setCurrent] = useState(1);
     const [loading, setLoading] = useState(true);
 
-    const router = useRouter(); 
+    const router = useRouter();
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -37,10 +37,14 @@ export default function Products() {
     const paginatedProducts = products.slice(startIndex, endIndex);
 
 
-    const handleProductClick = (product) => {
-        toast.success(`You are viewing: ${product.title}`);
-        setTimeout(() => {
-            router.push(`/products/${product.id}`);
+    const handleProductClick = async (product) => {
+        setTimeout(async () => {
+            try {
+                await router.push(`/products/${product.id}`);
+                toast.success(`You are viewing: ${product.title}`);
+            } catch (error) {
+                toast.error("Erro ao navegar para o produto. Tente novamente.");
+            }
         }, 700);
     };
 

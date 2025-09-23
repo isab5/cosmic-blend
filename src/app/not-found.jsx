@@ -15,11 +15,6 @@ export default function NotFound() {
                             🏠 Voltar para Home
                         </button>
                     </Link>
-                    <Link href="/contact">
-                        <button className={styles.button}>
-                            💬 Fale Conosco
-                        </button>
-                    </Link>
                 </div>
             </div>
         </div>

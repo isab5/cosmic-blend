@@ -24,8 +24,7 @@
     width: 100%;
 }
 
-.iconBackButton {
-    background: #f5f5f5;
+.iconBackButton, .iconHomeButton {
     border: none;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
@@ -40,7 +39,7 @@
     color: #222; 
     text-decoration: none;
 }
-.iconBackButton:hover {
+.iconBackButton:hover, .iconHomeButton:hover {
     background: #e7e8ec;
     box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
