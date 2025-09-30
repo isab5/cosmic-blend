@@ -38,12 +38,14 @@ export default function ProductDetails() {
     return (
         <div className={styles.page}>
             <div className={styles.productDetailsContainer}>
+                <div className={styles.navigationButtons}>
                 <Link href="/products" className={styles.iconBackButton} aria-label="Back to products">
                     <LeftOutlined style={{ fontSize: "22px" }} />
                 </Link>
             <Link href="/" className={styles.iconHomeButton} aria-label="Back to home">
                 <HomeOutlined style={{ fontSize: "22px" }} />
             </Link>
+                </div>
             <Image
                 className={styles.cover}
                 src={product.thumbnail || "/img/placeholder.jpg"}
