@@ -1,0 +1,124 @@
+.cosmicBg {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: auto;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: linear-gradient(120deg, #403b91 40%, #2737a6 100%);
+    padding: 48px 40px 40px 40px;
+    border-radius: 40px;
+    box-shadow: 0 6px 32px 8px rgba(50, 40, 110, 0.22);
+    position: relative;
+    color: #fff;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.7em;
+    font-weight: 700;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.field {
+    padding: 14px 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.06em;
+    background: rgba(255, 255, 255, 0.13);
+    color: #fff;
+    box-shadow: 0 0 10px #232e4517 inset;
+    outline: none;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.field:focus {
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+    box-shadow: 0 0 18px #6e58f8bb;
+}
+
+.button {
+    background: linear-gradient(90deg, #f77af4 0%, #4e3acc 60%, #1e297a 100%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 1.12em;
+    box-shadow: 0 0 12px #232e45;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #1e297a 0%, #4e3acc 60%, #f77af4 100%);
+    transform: scale(1.04);
+}
+
+.sectionTitle {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 1rem 0 0.1rem 0;
+    display: inline-block;
+    padding-bottom: 0.125rem;
+    letter-spacing: 0.0625rem;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.section ul li a {
+    color: #f585c5;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.section ul li a:hover,
+.section ul li a:focus {
+    color: #fff;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.socials a {
+    background-color: #5f2c82;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.4rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.socials a:hover {
+    background-color: #b06ab3;
+    color: #fff;
+}
