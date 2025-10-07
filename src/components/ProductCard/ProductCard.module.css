@@ -72,7 +72,7 @@
 .button {
     margin-top: auto;
     padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, #1a2980, #1b8886);
+    background: linear-gradient(120deg, #9163b6 40%, #57277e 100%);
     color: white;
     border: none;
     border-radius: 0.5rem;
