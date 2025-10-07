@@ -8,8 +8,8 @@ export default function Loading() {
                 <div className={styles.bounce2}></div>
                 <div className={styles.bounce3}></div>
             </div>
-            <h3 className={styles.loadingTitle}>Carregando conteúdo...</h3>
-            <p className={styles.loadingSubtitle}>Preparando tudo para você</p>
+            <h3 className={styles.loadingTitle}>Loading content...</h3>
+            <p className={styles.loadingSubtitle}>Preparing everything for you...</p>
         </div>
     )
 }
