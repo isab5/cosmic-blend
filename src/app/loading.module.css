@@ -24,7 +24,7 @@
 .bounce1, .bounce2, .bounce3 {
     width: 18px;
     height: 18px;
-    background-color: #a09cff;
+    background-color: #444285;
     border-radius: 100%;
     display: inline-block;
     animation: bouncedelay 1.4s infinite ease-in-out both;
@@ -44,7 +44,7 @@
 }
 
 .loadingTitle {
-    color: #fafaff;
+    color: #444285;
     z-index: 2;
     font-size: 1.7rem;
     margin: 0 0 5px 0;
@@ -53,7 +53,7 @@
 }
 
 .loadingSubtitle {
-    color: #c7cfff;
+    color: #302f5e;
     z-index: 2;
     margin: 0;
     font-size: 1.05rem;

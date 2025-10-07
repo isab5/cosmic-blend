@@ -3,12 +3,15 @@ import { useEffect, useState } from "react";
 import styles from "./products.module.css";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import { Pagination, Skeleton } from "antd";
+import { Pagination, Skeleton, Input } from "antd";
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import ProductCard from "components/ProductCard/ProductCard";
+import SearchButton from "components/SearchButton/SearchButton";
 
 const PAGE_SIZE = 30;
+
+const { Search } = Input;
 
 export default function Products() {
     const [products, setProducts] = useState([]);
@@ -48,8 +51,16 @@ export default function Products() {
         }, 700);
     };
 
+    const handleSearch = (valor) => {
+        setSearchTerm(valor);
+        setCurrent(1);
+    };
+
     return (
         <div>
+            <div style={{ maxWidth: 400, margin: "2rem auto" }}>
+                <SearchButton onSearch={handleSearch} />
+            </div>
             <div className={styles.productList}>
                 {loading
                     ? Array.from({ length: PAGE_SIZE }).map((_, i) => (
