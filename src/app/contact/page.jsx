@@ -1,7 +1,9 @@
 "use client";
 import styles from './contact.module.css';
 import { useState } from 'react';
-import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
     const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -12,8 +14,8 @@ export default function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        alert(
-            `Message sent!\nName: ${form.name}\nEmail: ${form.email}\nMessage: ${form.message}`
+        toast.success(
+            `Message sent!`
         );
         setForm({ name: '', email: '', message: '' });
     }
@@ -53,8 +55,11 @@ export default function Contact() {
                     <button className={styles.button} type="submit">Send Message</button>
                 </form>
                 <div className={styles.section}>
-                    <h4 className={styles.sectionTitle}>Follow Me</h4>
+                    <h4 className={styles.sectionTitle}>Follow and contact me:</h4>
                     <div className={styles.socials}>
+                        <a href="mailto:isabella.b.rosa6@aluno.senai.br" aria-label="E-mail">
+                            <FaEnvelope />
+                        </a>
                         <a href="https://www.instagram.com/isaj333j6?igsh=MWMxd2Q5OGdvOGJiNg==" target="_blank" rel="noopener" aria-label="Instagram"><FaInstagram /></a>
                         <a href="https://github.com/isab5" target="_blank" rel="noopener" aria-label="GitHub"><FaGithub /></a>
                         <a href="https://www.linkedin.com/in/isabella-borin-792b222b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn"><FaLinkedin /></a>
