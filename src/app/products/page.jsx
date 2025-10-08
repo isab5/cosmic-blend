@@ -11,12 +11,11 @@ import SearchButton from "components/SearchButton/SearchButton";
 
 const PAGE_SIZE = 30;
 
-const { Search } = Input;
-
 export default function Products() {
     const [products, setProducts] = useState([]);
     const [current, setCurrent] = useState(1);
     const [loading, setLoading] = useState(true);
+    const [searchTerm, setSearchTerm] = useState("");
 
     const router = useRouter();
 
@@ -35,9 +34,12 @@ export default function Products() {
         fetchProducts();
     }, []);
 
+    const filteredProducts = products.filter(product =>
+        product.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
     const startIndex = (current - 1) * PAGE_SIZE;
     const endIndex = startIndex + PAGE_SIZE;
-    const paginatedProducts = products.slice(startIndex, endIndex);
+    const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
 
 
     const handleProductClick = async (product) => {
@@ -85,7 +87,7 @@ export default function Products() {
             <Pagination
                 current={current}
                 onChange={page => setCurrent(page)}
-                total={products.length}
+                total={filteredProducts.length}
                 pageSize={PAGE_SIZE}
                 showSizeChanger={false}
                 style={{ margin: "2rem auto", textAlign: "center", justifyContent: "center", display: "flex" }}
