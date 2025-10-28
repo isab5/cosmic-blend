@@ -34,11 +34,6 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/editproduct">
-                                <span>Edit Product</span>
-                            </Link>
-                        </li>
-                        <li>
                             <Link href="/contact">
                                 <span>Contact</span>
                             </Link>
